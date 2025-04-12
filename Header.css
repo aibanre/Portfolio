@@ -5,7 +5,11 @@
 }
 
 body{
-    background-image: linear-gradient(to right top, #020202, #131120, #191a38, #1d2352, #1e2d6e);
+    /* background-image: linear-gradient(to right top, #020202, #131120, #191a38, #1d2352, #1e2d6e); */
+    /* background-image: linear-gradient(to bottom, #3b22eb, #1f34e0, #003ed2, #0044c3, #0249b3, #1a449e, #244089, #293b74, #272e57, #21223d, #181824, #0a0a0a); */
+    background-image: linear-gradient(to bottom, #042354, #1a2348, #22243d, #262532, #272727);
+    /* background-image: linear-gradient(to bottom, #120477, #23298f, #3547a5, #4a64ba, #6281ce, #667fc2, #697db5, #6b7ba9, #555c7d, #3d3f54, #25252e, #0a0a0a); */
+    /* background-image: linear-gradient(to left bottom, #120477, #23298f, #3547a5, #4a64ba, #6281ce, #667fc2, #697db5, #6b7ba9, #555c7d, #3d3f54, #25252e, #0a0a0a); */
 }
 
 .headerContainer{
@@ -17,6 +21,7 @@ body{
     position: sticky;
     top: 0;
     border: 1px solid black;
+    z-index: 3;
 }
 
 .navBarContainer{

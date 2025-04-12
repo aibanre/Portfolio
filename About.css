@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 .s2_contentContainer{
@@ -25,6 +26,7 @@
 }
 
 .sectionTwo .textHolder{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +49,7 @@
 }
 
 .sectionTwo .s2_contentContainer .imageHolder{
-    padding: 3rem;
+    padding: 5%;
     overflow: hidden;
 }
 
