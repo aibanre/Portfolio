@@ -22,7 +22,6 @@ html {
     grid-template-columns: repeat(2, 40% 60%);
     grid-auto-rows: 600px;
     background-color: rgb(0, 0, 34);
-    border: 1px solid white;
 }
 
 .sectionOne .textHolder{
