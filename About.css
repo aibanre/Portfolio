@@ -118,17 +118,23 @@
 
 @media (max-width:500px) {
     .sectionTwo .textHolder{
-        padding: 3rem;
+        padding: 2rem;
         grid-column: 2;
         grid-row: 2;
-    }
-    .sectionTwo .imageHolder{
-        grid-column: 2;
-        grid-row: 1;
+        background-color: aliceblue;
     }
 
     .circle{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sectionTwo .textHolder h1{
+        font-size: 1.5vw;
+        padding: 1rem 0;
+    }
+    
+    .sectionTwo .textHolder p{
+        font-size: 1vw;
     }
 }
