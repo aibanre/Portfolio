@@ -31,7 +31,6 @@
     padding: 6rem;
     line-height: 2rem;
     font-family: lato;
-    border: 1px solid white;
 }
 
 .sectionTwo .textHolder h1, p{
@@ -44,13 +43,22 @@
 }
 
 .sectionTwo .textHolder p{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
-.sectionTwo .imageHolder img{
+.sectionTwo .s2_contentContainer .imageHolder{
+    padding: 3rem;
+    overflow: hidden;
+}
+
+
+.sectionTwo .imageHolder img{ 
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: 0 70%;
+    border-radius: 1rem;
+
 }
 
 .tools{
@@ -81,7 +89,7 @@
     background-color: black;
 }
 
-@media (max-width:850px) {
+@media (max-width:1000px) {
     .s2_contentContainer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);

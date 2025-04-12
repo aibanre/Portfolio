@@ -83,7 +83,9 @@ html {
 }
 
 .sectionOne .imageHolder img{
-    object-fit: cover;
+    background-color: white;
+    object-position: -55px;
+    object-fit:cover;
 }
 
 .holdImage{
@@ -124,6 +126,12 @@ html {
     .sectionOne .textHolder h1{
         font-size: 2rem;
     }
+
+    .sectionOne .imageHolder img{
+        background-color: white;
+        object-position: -45px;
+        object-fit:cover;
+    }
 }
 
 @media (max-width:700px) {
@@ -155,5 +163,11 @@ html {
     }
     .sectionOne .textHolder h1{
         font-size: 2rem;
+    }
+
+    .sectionOne .imageHolder img{
+        background-color: white;
+        object-position: -35px;
+        object-fit:cover;
     }
 }
