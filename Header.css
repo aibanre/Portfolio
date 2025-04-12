@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right top, #020202, #131120, #191a38, #1d2352, #1e2d6e);
+}
+
+.headerContainer{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    position: sticky;
+    top: 0;
+    border: 1px solid black;
+}
+
+.navBarContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBarContainer a{
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+
+.navBarContainer a:hover{
+    color: rgb(70, 73, 255);
+}
+
+.burger {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 2rem;
+    border: none;
+}
+  
+  /* The container <div> - needed to position the dropup content */
+.burgerMenuContainer {
+    position: relative;
+    display: none;
+}
+  
+.burgerMenuContainer-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: ease-in-out .3s;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #303030;
+    width: max-content;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    pointer-events: none; 
+}
+  
+.burgerMenuContainer-content a {
+    font-family: montserrat;
+    text-align: right;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.burgerMenuContainer-content a:hover {
+    background-color: rgb(72, 72, 255)
+}
+
+.burgerMenuContainer:hover .burgerMenuContainer-content {
+display: block;
+opacity: 1;
+transform: translateY(0);
+pointer-events: auto; /* enables interaction when shown */
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.burgerMenuContainer:hover .burger {
+    background-color: #c0c0c027;
+}
+
+@media (max-width:1000px) {
+.headerContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navBarContainer{
+    display: none;
+}
+
+.burgerMenuContainer {
+    display: block;
+}
+}

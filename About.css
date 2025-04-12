@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerText{
+    margin: 0 5rem;
+    text-align: center;
+    color: rgb(72, 72, 255);
+    margin-top: 3rem;
+    font-family: montserrat;
+}
+
+.sectionTwo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+}
+
+.s2_contentContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+}
+
+.sectionTwo .textHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem;
+    line-height: 2rem;
+    font-family: lato;
+    border: 1px solid white;
+}
+
+.sectionTwo .textHolder h1, p{
+    color: white;
+}
+
+.sectionTwo .textHolder h1{
+    font-size: 2vw;
+    padding: 2.5rem 0;
+}
+
+.sectionTwo .textHolder p{
+    font-size: 1.5vw;
+}
+
+.sectionTwo .imageHolder img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid white;
+    border-radius: 3rem;
+    transition: ease-in-out .2s;
+}
+
+.circle i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.circle:hover{
+    transform: translateY(-5px);
+    background-color: black;
+}
+
+@media (max-width:850px) {
+    .s2_contentContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 400px;
+    }
+
+    .sectionTwo .textHolder{
+        padding: 3rem;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .sectionTwo .imageHolder{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .sectionTwo .textHolder h1{
+        font-size: 1.5rem;
+        padding: 2.5rem 0;
+    }
+    
+    .sectionTwo .textHolder p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    .sectionTwo .textHolder{
+        padding: 3rem;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .sectionTwo .imageHolder{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .circle{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}

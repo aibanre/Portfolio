@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.headerText{
+    margin: 0 5rem;
+    text-align: center;
+    color: rgb(72, 72, 255);
+    margin-top: 3rem;
+    font-family: montserrat;
+}
+
+
+.sectionFour{
+    margin: 4rem 10rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px);
+    background-color: rgb(32, 32, 32);
+}
+
+.inputDetails a{
+    text-decoration: none;
+}
+
+.button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right:1rem ;
+}
+
+.button i{
+    padding-left: 1rem;
+    color: rgb(72, 72, 255);
+}
+
+.inputDetails{
+    
+    line-height: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.inputDetails a .sendButton{
+    height: 3rem;
+    font-family: lato;
+    transition: ease-in-out .3s;
+    overflow: hidden;
+}
+
+.inputDetails a .sendButton .button{
+    width: 35%;
+    text-align: center;
+    background-color: rgb(72, 72, 255);
+    color: white;
+    transition: ease-in-out .3s;
+}
+
+.inputDetails a .sendButton:hover{
+    .button{
+        width: 100%;
+        color: rgb(72, 72, 255);
+        background-color: white;
+    }
+    .button p{
+        color: rgb(72, 72, 255);
+    }
+}
+
+input{
+    font-family: lato;
+    width: 80%;
+    height: 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+input:focus, textarea:focus{
+    outline: thin solid rgb(72, 72, 255);
+}
+
+textarea{
+    font-family: lato;
+    width: 80%;
+    height: 7rem;
+    color: white;
+    border: none;
+    resize: vertical;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem ;
+    font-family: montserrat;
+    color: white;
+}
+
+h1{
+    padding-bottom: 2rem;
+    font-family: montserrat;
+}
+
+p{
+    font-family: Lato; 
+    font-size: larger;
+}
+
+.contactHolder{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contactHolder i{
+    padding-right: 1rem;
+    color: white;
+}
+
+@media (max-width:1000px) {
+    .sectionFour{
+        margin: 4rem 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .inputDetails{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .contactDetails{
+        padding: 1rem;
+        grid-row: 1;
+    }
+}
+
+@media (max-width:700px) {
+    .sectionFour{
+        margin: 4rem 1rem;
+    }
+}
